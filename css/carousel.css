@@ -1,0 +1,87 @@
+.carousel-container {
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+    
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+    
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+    
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+    
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+    
+.carousel-nav {
+    text-align: center;
+    margin-top: 15px;
+}
+    
+.carousel-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+    
+.carousel-dot.active {
+    background: #4361ee;
+}
+    
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s;
+}
+    
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+    
+.prev-btn {
+    left: 20px;
+}
+    
+.next-btn {
+    right: 20px;
+}

@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #7639b2;
+    --secondary-color: #5a2fb8;
+    --light-color: #f8f9fa;
+    --dark-color: #400c64;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer {
+    background: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* Стили для раздела участников */
+.team-section {
+    margin: 2rem 0;
+}
+
+.team-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2b2d42;
+}
+
+.team-member {
+    display: flex;
+    align-items: flex-start;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-photo {
+    flex: 0 0 120px;
+    margin-right: 1.5rem;
+}
+
+.member-photo img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #4361ee;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-info h3 {
+    margin-top: 0;
+    color: #4361ee;
+}
+
+.member-info p {
+    margin: 0.5rem 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .member-photo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        flex: 0 0 100px;
+    }
+}
